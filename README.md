@@ -1,11 +1,32 @@
-# Audio-Link
+# Serene
 
-Audio-Link is an open-source project that enables you to stream audio between your PC and mobile devices over your own local network. With Audio-Link, you can seamlessly enjoy your PC's audio on your Android devices without the need for cables or additional hardware.
+Serene is an open-source Android music player for your locally stored music library. It features a signature vinyl turntable Now Playing screen with spinning album art — inspired by YouTube Music — along with a full-featured music library, background playback, and a clean dark purple theme.
 
 ## Features
 
-- Real-time audio streaming from your PC to Android devices
-- Support for multiple connected devices simultaneously
-- Configurable audio settings to optimize quality and latency
-- User-friendly interface for easy setup and control
-- Cross-platform compatibility: Windows PC and Android devices
+- Vinyl/turntable Now Playing screen with rotating album art disc and animated tonearm
+- Browse music by Songs, Albums, Artists, and Playlists
+- Background playback via Media3/ExoPlayer with notification controls
+- Shuffle, repeat (off / all / one), and seek
+- Persistent mini player bar across all screens
+- Favorites and playlist management stored locally
+- Scans device storage automatically via MediaStore API
+
+## Tech Stack
+
+- **Language:** Kotlin
+- **UI:** Jetpack Compose
+- **Playback:** AndroidX Media3 (ExoPlayer + MediaSessionService)
+- **Architecture:** MVVM + Repository
+- **DI:** Hilt
+- **Database:** Room (playlists & favorites)
+- **Images:** Coil
+
+## Requirements
+
+- Android 8.0 (API 26) or higher
+- Storage permission for audio files
+
+## License
+
+MIT License — see [LICENSE](LICENSE)
